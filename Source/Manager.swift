@@ -368,7 +368,7 @@ public class Manager {
 
         /// Overrides default behavior for NSURLSessionTaskDelegate method `URLSession:session:task:needNewBodyStream:`.
         public var taskNeedNewBodyStream: ((NSURLSession, NSURLSessionTask) -> NSInputStream?)?
-
+     
         /// Overrides all behavior for NSURLSessionTaskDelegate method `URLSession:session:task:needNewBodyStream:` and
         /// requires the caller to call the `completionHandler`.
         public var taskNeedNewBodyStreamWithCompletion: ((NSURLSession, NSURLSessionTask, NSInputStream? -> Void) -> Void)?
